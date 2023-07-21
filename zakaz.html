@@ -28,7 +28,7 @@
 	<div class="container mt-5">
 		<h1 class="my-5 text-center">Форма заказа и обратной связи</h1>
 		<div class="col-6 mx-auto">
-			<form onsubmit="sendForm(this); return false">
+			<form action='sendMail.php' method='post'>
 				<div class="input-group mb-3">
 					<div class="input-group-prepend">
 					</div> <input type="text" class="form-control form-control-lg" placeholder="Имя"
@@ -67,20 +67,6 @@
 			</div>
 		</div>
 	</div>
-	<script>
-		async function sendForm(form) {
-			let response = await fetch("mail.php", {
-				method: "POST",
-				body: new FormData(form),
-			});
-			let result = await response.text();
-			if (result == "ok") {
-				alert("Заказ успешно отправлен! В самое ближайшее время мы с Вами свяжемся");
-			} else if (result == "exist") {
-				info.innerText = "Заполены не все поля";
-			}
-		} 
-	</script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
