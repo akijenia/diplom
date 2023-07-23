@@ -20,16 +20,48 @@
 			color: rgb(170, 90, 25);
 		}
 
+		h2 {
+			color: rgb(105, 100, 96);
+		}
+
+		h3 {
+			color: rgb(105, 100, 96);
+		}
+
+		p {
+			color: rgb(105, 100, 96);
+		}
+
 		.main-navbar {
 			background-color: rgb(170, 90, 25);
 		}
-		.container-1 {
-            display: block;
-            margin: 2rem;
-            width: 100%;
+
+		.container {
+			display: block;
+			margin: 3rem;
+			width: 120%;
 		}
 
+		.box-1 {
+			flex: 2;
+			text-align: justify;
+			padding: 10px;
+		}
+
+		.footer {
+			background-color: #0a0a0a;
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			text-align: center;
+			width: 100%;
+			font-size: 5px;
+			font-weight: bold;
+		}
 	</style>
+</head>
+
+<body>
 	<div class="container mt-5">
 		<h1 class="my-5 text-center">Официальный сайт художника Александры Акимовой</h1>
 		<div class="col-6 mx-auto">
@@ -72,59 +104,71 @@
 	</nav>
 	<!-- Navbar end -->
 	<!-- Contact start -->
-	<div class="container-1">
-		<div class="row">
-			<div class="col-md-5">
-				<h2 class="text-center">Контакты</h2>
-				<h3>Адрес:</h3>
-				<p>г. Люберцы</p>
-				<h3>Телефон:</h3>
-				<p><a href="tel:+79774613707">+7 (977) 461-37-07</a></p>
-				<h3>Е-mail:</h3>
-				<p><a href="mailto:akijenia@mail.ru">akijenia@mail.ru</a></p>
-				<h3>График работы:</h3>
-				<p>Понедельник – Четверг: с 9:00 до 20:00, Пятница: с 9:00 до 15:00</p>
-			</div>
-			<div class="col-md-7">
-			</div>
-			<div class="container mt-6">
-				<div class="col-6 mx-auto">
-					<div class="input-group mb-5">
-						<div class="input-group-prepend">
-							<a itemprop="url" href="zakaz.html" class="mainMenu__link">
-								<p id="info"></p> <input type="submit" value="Связаться с автором"
-									class="btn btn-secondary btn-lg btn-block" />
-							</a>
+	<div class="container">
+		<div class="box-1">
+			<div class="row">
+				<div class="col-md-5">
+					<h2 class="text-center">Контакты</h2>
+					<h3>Адрес:</h3>
+					<p>г. Люберцы</p>
+					<h3>Телефон:</h3>
+					<p><a href="tel:+79774613707">+7 (977) 461-37-07</a></p>
+					<h3>Е-mail:</h3>
+					<p><a href="mailto:akijenia@mail.ru">akijenia@mail.ru</a></p>
+					<h3>График работы:</h3>
+					<p>Понедельник – Четверг: с 9:00 до 20:00, Пятница: с 9:00 до 15:00</p>
+				</div>
+				<div class="col-md-4">
+					<img src="img/img24.png" width="350" height="400" alt="img" />
+				</div>
+				<div class="container mt-6">
+					<div class="col-6 mx-auto">
+						<div class="input-group mb-5">
+							<div class="input-group-prepend">
+								<a itemprop="url" href="zakaz.html" class="mainMenu__link">
+									<p id="info"></p> <input type="submit" value="Связаться с автором"
+										class="btn btn-secondary btn-lg btn-block" />
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	</div>
 	<!-- Contact end -->
-	<footer class="my-0 pt-md-3 navbar-lg navbar-dark bg-dark h5">
+
+	<!-- Footer start -->
+	<div class="footer">
 		<div class="row">
-			<div class="col-md-2">
-				<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="font-size: 77px;">
-					<h5 class="text-center" style="color: white">
-						<img src="img/Vector2.png" class="img-fluid" style="font-size: 20px;"> VK
-					</h5>
+			<div class="col-md-auto">
+				<h5 class="text-center" style="color: rgb(170, 90, 25)">
+					<a href="https://vk.com/id573144968" style="color: #995218; text-decoration: none;">
+						<img src="img/VK.png" class="img-fluid"> В контакте
+					</a>
+				</h5>
 			</div>
-			<div class="col-md-8">
-				<h5 class="text-center" style="color: white">
-					<img src="img/Vector1.png" class="img-fluid" style="font-size: 10px;"> Акимова Александра ART -
-					2023
+			<div class="col-md-auto">
+				<h5 class="text-center" style="color: rgb(170, 90, 25)">
+					<a href="https://t.me/telegram/EvgeniiaOvsyannikova" style="color: #995218; text-decoration: none;">
+						<img src="img/TG.png" class="img-fluid"> Телеграм
+					</a>
+				</h5>
+			</div>
+			<div class="col-md-5">
+				<h5 class="text-center" style="color: rgb(170, 90, 25)">
+					<img src="img/C.png" class="img-fluid" style="font-size: 5px; padding: 1rem;"> Акимова Александра
+					ART - 2023
 				</h5>
 			</div>
 		</div>
-	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-		crossorigin="anonymous"></script>
-	</body>
+		<!-- Footer end -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+			crossorigin="anonymous"></script>
+</body>
 
 </html>
