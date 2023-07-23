@@ -6,23 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
     <title>Официальный сайт художника Акимовой Александры</title>
     <style>
         body {
-			font-family: 'Lora', serif;
+            font-family: 'Lora', serif;
             background-color: rgb(17, 17, 16);
         }
+
         h1 {
-			color: rgb(170, 90, 25);
-		}
+            color: rgb(170, 90, 25);
+        }
+
+        h2 {
+            color: rgb(92, 72, 56);
+        }
+
         .main-navbar {
-			background-color: rgb(170, 90, 25);
-		}
+            background-color: rgb(170, 90, 25);
+        }
+
+        .footer {
+            background-color: #0a0a0a;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            width: 100%;
+            font-size: 5px;
+            font-weight: bold;
+        }
         
     </style>
+</head>
+
+<body>
     <div class="container mt-5">
         <h1 class="my-5 text-center">Официальный сайт художника Александры Акимовой</h1>
         <div class="col-6 mx-auto">
@@ -63,26 +83,61 @@
             </ul>
         </div>
     </nav>
-	<!-- Navbar end -->
-    <footer class="my-0 pt-md-3 navbar-lg navbar-dark bg-dark h5">
-		<div class="row">
-		  <div class="col-md-2">
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="font-size: 77px;">
-			<h5 class="text-center" style="color: white">
-			<img src="img/Vector2.png" class="img-fluid" style="font-size: 20px;"> VK</h5>
-		  </div>
-		  <div class="col-md-8">
-			<h5 class="text-center" style="color: white">
-			  <img src="img/Vector1.png" class="img-fluid" style="font-size: 10px;"> Акимова Александра ART - 2023</h5>
-		  </div>
-		</div>
-	  </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"></script>
+    <!-- Navbar end -->
+    <!-- Form start -->
+    <h2 class="my-5 text-center">Чтобы увидеть другие отзывы, прошу Вас сначала написать свой!)))</h2>
+    <div class="col-6 mx-auto">
+        <form action='rw.php' method='post'>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                </div> <input type="text" class="form-control form-control-lg" placeholder="Имя"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Имя'" autocomplete="yourname" required
+                    name="yourname" minlength="4"/>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                </div> <input type="text" class="form-control form-control-lg" placeholder="Ваш отзыв"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Сообщение'" autocomplete="comment"
+                    required name="comment" minlength="4" />
+            </div>
+            <p id="info"></p> <input type="submit" value="Отправить" class="btn btn-secondary btn-lg btn-block" />
+        </form>
+    </div>
+    </div>
+    <!-- Form end -->
+
+    <!-- Footer start -->
+    <div class="footer">
+        <div class="row">
+            <div class="col-md-auto">
+                <h5 class="text-center" style="color: rgb(170, 90, 25)">
+                    <a href="https://vk.com/id573144968" style="color: #995218; text-decoration: none;">
+                        <img src="img/VK.png" class="img-fluid"> В контакте
+                    </a>
+                </h5>
+            </div>
+            <div class="col-md-auto">
+                <h5 class="text-center" style="color: rgb(170, 90, 25)">
+                    <a href="https://t.me/telegram/EvgeniiaOvsyannikova" style="color: #995218; text-decoration: none;">
+                        <img src="img/TG.png" class="img-fluid"> Телеграм
+                    </a>
+                </h5>
+            </div>
+            <div class="col-md-5">
+                <h5 class="text-center" style="color: rgb(170, 90, 25)">
+                    <img src="img/C.png" class="img-fluid" style="font-size: 5px; padding: 1rem;"> Акимова Александра
+                    ART - 2023
+                </h5>
+            </div>
+        </div>
+        <!-- Footer end -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </body>
 
 </html>
